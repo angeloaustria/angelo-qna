@@ -1,0 +1,798 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "bye": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "later,see,you": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "later,talk,to,you": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "see,soon,you": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "farewel": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "hello": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hey": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "howdi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "yo": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hello,there": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hi,there": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hey,there": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "howdi,there": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "do,where,work,you": {
+            "intent": "professional.currentwork",
+            "domain": "default"
+          },
+          "do,for,who,work,you": {
+            "intent": "professional.currentwork",
+            "domain": "default"
+          },
+          "compani,do,for,which,work,you": {
+            "intent": "professional.currentwork",
+            "domain": "default"
+          },
+          "is,job,what,your": {
+            "intent": "professional.currentwork",
+            "domain": "default"
+          },
+          "are,familiar,technolog,what,with,you": {
+            "intent": "professional.skills",
+            "domain": "default"
+          },
+          "are,familar,languag,program,what,with,you": {
+            "intent": "professional.skills",
+            "domain": "default"
+          },
+          "do,javascript,know,you": {
+            "intent": "professional.skills",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greetings.bye": "default",
+          "greetings.hello": "default",
+          "professional.currentwork": "default",
+          "professional.skills": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "bye",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "talk to you later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you soon",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "farewell",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "howdy",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "yo",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello there",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi there",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey there",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "howdy there",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "where do you work",
+            "intent": "professional.currentwork"
+          },
+          {
+            "domain": "default",
+            "utterance": "who do you work for",
+            "intent": "professional.currentwork"
+          },
+          {
+            "domain": "default",
+            "utterance": "which company do you work for",
+            "intent": "professional.currentwork"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is your job",
+            "intent": "professional.currentwork"
+          },
+          {
+            "domain": "default",
+            "utterance": "what technologies are you familiar with?",
+            "intent": "professional.skills"
+          },
+          {
+            "domain": "default",
+            "utterance": "what programming languages are you familar with?",
+            "intent": "professional.skills"
+          },
+          {
+            "domain": "default",
+            "utterance": "do you know javascript?",
+            "intent": "professional.skills"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "bye": 1,
+              "see": 1,
+              "you": 1,
+              "later": 1,
+              "talk": 1,
+              "to": 1,
+              "soon": 1,
+              "farewel": 1,
+              "hello": 1,
+              "hi": 1,
+              "hey": 1,
+              "howdi": 1,
+              "yo": 1,
+              "there": 1,
+              "where": 1,
+              "do": 1,
+              "work": 1,
+              "who": 1,
+              "for": 1,
+              "which": 1,
+              "compani": 1,
+              "what": 1,
+              "is": 1,
+              "your": 1,
+              "job": 1,
+              "technolog": 1,
+              "are": 1,
+              "familiar": 1,
+              "with": 1,
+              "program": 1,
+              "languag": 1,
+              "familar": 1,
+              "know": 1,
+              "javascript": 1
+            },
+            "intents": {
+              "greetings.bye": 1,
+              "greetings.hello": 1,
+              "professional.currentwork": 1,
+              "professional.skills": 1
+            },
+            "intentFeatures": {
+              "greetings.bye": {
+                "bye": 1,
+                "see": 1,
+                "you": 1,
+                "later": 1,
+                "talk": 1,
+                "to": 1,
+                "soon": 1,
+                "farewel": 1
+              },
+              "greetings.hello": {
+                "hello": 1,
+                "hi": 1,
+                "hey": 1,
+                "howdi": 1,
+                "yo": 1,
+                "there": 1
+              },
+              "professional.currentwork": {
+                "where": 1,
+                "do": 1,
+                "you": 1,
+                "work": 1,
+                "who": 1,
+                "for": 1,
+                "which": 1,
+                "compani": 1,
+                "what": 1,
+                "is": 1,
+                "your": 1,
+                "job": 1
+              },
+              "professional.skills": {
+                "what": 1,
+                "technolog": 1,
+                "are": 1,
+                "you": 1,
+                "familiar": 1,
+                "with": 1,
+                "program": 1,
+                "languag": 1,
+                "familar": 1,
+                "do": 1,
+                "know": 1,
+                "javascript": 1
+              }
+            },
+            "featuresToIntent": {
+              "bye": [
+                "greetings.bye"
+              ],
+              "see": [
+                "greetings.bye"
+              ],
+              "you": [
+                "greetings.bye",
+                "professional.currentwork",
+                "professional.skills"
+              ],
+              "later": [
+                "greetings.bye"
+              ],
+              "talk": [
+                "greetings.bye"
+              ],
+              "to": [
+                "greetings.bye"
+              ],
+              "soon": [
+                "greetings.bye"
+              ],
+              "farewel": [
+                "greetings.bye"
+              ],
+              "hello": [
+                "greetings.hello"
+              ],
+              "hi": [
+                "greetings.hello"
+              ],
+              "hey": [
+                "greetings.hello"
+              ],
+              "howdi": [
+                "greetings.hello"
+              ],
+              "yo": [
+                "greetings.hello"
+              ],
+              "there": [
+                "greetings.hello"
+              ],
+              "where": [
+                "professional.currentwork"
+              ],
+              "do": [
+                "professional.currentwork",
+                "professional.skills"
+              ],
+              "work": [
+                "professional.currentwork"
+              ],
+              "who": [
+                "professional.currentwork"
+              ],
+              "for": [
+                "professional.currentwork"
+              ],
+              "which": [
+                "professional.currentwork"
+              ],
+              "compani": [
+                "professional.currentwork"
+              ],
+              "what": [
+                "professional.currentwork",
+                "professional.skills"
+              ],
+              "is": [
+                "professional.currentwork"
+              ],
+              "your": [
+                "professional.currentwork"
+              ],
+              "job": [
+                "professional.currentwork"
+              ],
+              "technolog": [
+                "professional.skills"
+              ],
+              "are": [
+                "professional.skills"
+              ],
+              "familiar": [
+                "professional.skills"
+              ],
+              "with": [
+                "professional.skills"
+              ],
+              "program": [
+                "professional.skills"
+              ],
+              "languag": [
+                "professional.skills"
+              ],
+              "familar": [
+                "professional.skills"
+              ],
+              "know": [
+                "professional.skills"
+              ],
+              "javascript": [
+                "professional.skills"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "bye",
+                "see",
+                "you",
+                "later",
+                "talk",
+                "to",
+                "soon",
+                "farewel",
+                "hello",
+                "hi",
+                "hey",
+                "howdi",
+                "yo",
+                "there",
+                "where",
+                "do",
+                "work",
+                "who",
+                "for",
+                "which",
+                "compani",
+                "what",
+                "is",
+                "your",
+                "job",
+                "technolog",
+                "are",
+                "familiar",
+                "with",
+                "program",
+                "languag",
+                "familar",
+                "know",
+                "javascript"
+              ],
+              "intents": [
+                "greetings.bye",
+                "greetings.hello",
+                "professional.currentwork",
+                "professional.skills"
+              ],
+              "perceptrons": [
+                [
+                  10.647622108459473,
+                  4.798446178436279,
+                  2.5340888500213623,
+                  3.6402087211608887,
+                  2.346071243286133,
+                  2.346071243286133,
+                  3.503312349319458,
+                  10.622925758361816,
+                  -3.3394510746002197,
+                  -3.323133707046509,
+                  -3.306978225708008,
+                  -3.2896523475646973,
+                  -3.264263153076172,
+                  -1.4567574262619019,
+                  -0.9073665738105774,
+                  -3.266636371612549,
+                  -1.9213740825653076,
+                  -0.5308886766433716,
+                  -0.961344838142395,
+                  -0.32518571615219116,
+                  -0.32518571615219116,
+                  -1.8560432195663452,
+                  -0.5097875595092773,
+                  -0.5097875595092773,
+                  -0.5097875595092773,
+                  -0.7333969473838806,
+                  -1.3234241008758545,
+                  -0.7333969473838806,
+                  -1.3234241008758545,
+                  -0.4995385706424713,
+                  -0.4995385706424713,
+                  -0.4995385706424713,
+                  -1.3245333433151245,
+                  -1.3245333433151245,
+                  3.3874607289863072
+                ],
+                [
+                  -6.895945072174072,
+                  -1.6113027334213257,
+                  -4.575840950012207,
+                  -1.282124638557434,
+                  -0.6666774153709412,
+                  -0.6666774153709412,
+                  -0.9958556294441223,
+                  -6.846057415008545,
+                  6.866051197052002,
+                  6.865771293640137,
+                  6.864797115325928,
+                  6.863375186920166,
+                  6.97291898727417,
+                  0.2573106288909912,
+                  -0.4562482237815857,
+                  -1.6870992183685303,
+                  -1.138181447982788,
+                  -0.2650759816169739,
+                  -0.5468795895576477,
+                  -0.17640501260757446,
+                  -0.17640501260757446,
+                  -2.2584376335144043,
+                  -1.6493712663650513,
+                  -1.6493712663650513,
+                  -1.6493712663650513,
+                  -0.3025110065937042,
+                  -0.5483638048171997,
+                  -0.3025110065937042,
+                  -0.5483638048171997,
+                  -0.15910974144935608,
+                  -0.15910974144935608,
+                  -0.15910974144935608,
+                  -0.47398287057876587,
+                  -0.47398287057876587,
+                  7.21124130147904
+                ],
+                [
+                  -0.5212544798851013,
+                  -0.911169707775116,
+                  0.7900691628456116,
+                  -0.8675296902656555,
+                  -0.35364070534706116,
+                  -0.35364070534706116,
+                  -0.4123878479003906,
+                  -0.5043742656707764,
+                  -0.5179463624954224,
+                  -0.5096822381019592,
+                  -0.5049442052841187,
+                  -0.502797544002533,
+                  -0.498942106962204,
+                  -0.40645861625671387,
+                  3.655021905899048,
+                  3.4734346866607666,
+                  5.855930805206299,
+                  1.4696823358535767,
+                  2.2000553607940674,
+                  0.7308695912361145,
+                  0.7308695912361145,
+                  2.438286542892456,
+                  3.781494379043579,
+                  3.781494379043579,
+                  3.781494379043579,
+                  -0.6470070481300354,
+                  -1.2744220495224,
+                  -0.6470070481300354,
+                  -1.2744220495224,
+                  -0.4734605550765991,
+                  -0.4734605550765991,
+                  -0.4734605550765991,
+                  -2.382387638092041,
+                  -2.382387638092041,
+                  0.5026515385914578
+                ],
+                [
+                  -0.25398457050323486,
+                  -1.669969916343689,
+                  2.5226223468780518,
+                  -1.3959660530090332,
+                  -0.6587100625038147,
+                  -0.6587100625038147,
+                  -0.968985915184021,
+                  -0.17042942345142365,
+                  -0.2196502983570099,
+                  -0.20787592232227325,
+                  -0.2063683271408081,
+                  -0.195168599486351,
+                  -0.15235240757465363,
+                  -0.25496378540992737,
+                  -1.6803231239318848,
+                  1.9539287090301514,
+                  -2.899139642715454,
+                  -0.7579625248908997,
+                  -1.207008719444275,
+                  -0.4229217767715454,
+                  -0.4229217767715454,
+                  2.165523052215576,
+                  -0.7734295725822449,
+                  -0.7734295725822449,
+                  -0.7734295725822449,
+                  1.7802342176437378,
+                  2.9670627117156982,
+                  1.7802342176437378,
+                  2.9670627117156982,
+                  1.186827301979065,
+                  1.186827301979065,
+                  1.186827301979065,
+                  4.853073596954346,
+                  4.853073596954346,
+                  0.10297207293034623
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you later"
+      ],
+      [
+        "en",
+        "talk to you later"
+      ],
+      [
+        "en",
+        "see you soon"
+      ],
+      [
+        "en",
+        "farewell"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hey"
+      ],
+      [
+        "en",
+        "howdy"
+      ],
+      [
+        "en",
+        "yo"
+      ],
+      [
+        "en",
+        "hello there"
+      ],
+      [
+        "en",
+        "hi there"
+      ],
+      [
+        "en",
+        "hey there"
+      ],
+      [
+        "en",
+        "howdy there"
+      ],
+      [
+        "en",
+        "where do you work"
+      ],
+      [
+        "en",
+        "who do you work for"
+      ],
+      [
+        "en",
+        "which company do you work for"
+      ],
+      [
+        "en",
+        "what is your job"
+      ],
+      [
+        "en",
+        "what technologies are you familiar with?"
+      ],
+      [
+        "en",
+        "what programming languages are you familar with?"
+      ],
+      [
+        "en",
+        "do you know javascript?"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "greetings.bye": [
+          {
+            "answer": "good bye!"
+          },
+          {
+            "answer": "farewell!"
+          }
+        ],
+        "greetings.hello": [
+          {
+            "answer": "hello, nice to meet you"
+          },
+          {
+            "answer": "hi, nice to meet you"
+          },
+          {
+            "answer": "hey there, nice to meet you"
+          }
+        ],
+        "professional.currentwork": [
+          {
+            "answer": "I currently work as a software developer at Varicent."
+          },
+          {
+            "answer": "I am a software developer at Varicent."
+          }
+        ],
+        "professional.skills": [
+          {
+            "answer": "I have experience in web development, specifically JavaScript, React.js and Node.js."
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

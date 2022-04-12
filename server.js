@@ -18,7 +18,7 @@ app.get('/', (_, res) => {
 
 app.post('/angeloqna', async (req, res) => {
     const response = await manager.process('en', req.body.message);
-    res.json({
+    res.send({
         answer: response.answers[0].answer
     });
 });

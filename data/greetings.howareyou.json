@@ -1,0 +1,13 @@
+{
+    "questions": [
+        "how are you?",
+        "how are you doing?",
+        "how are you feeling?",
+        "how is your day?",
+        "how is your day going?",
+        "do you feel okay?"
+    ],
+    "answers": [
+        "I am doing well."
+    ]
+}

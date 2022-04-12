@@ -17,10 +17,9 @@ app.get('/', (_, res) => {
 });
 
 app.post('/angeloqna', async (req, res) => {
-    console.log(req.body);
     const response = await manager.process('en', req.body.message);
-    console.log(response);
     res.send({
-        answer: response.answers[0].answer
+        answer: response.answers[0].answer,
+        intent: response.intent
     });
 });

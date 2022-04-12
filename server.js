@@ -7,7 +7,7 @@ const port = process.env.PORT || 5000;
 const manager = new NlpManager({ languages: ['en'] });
 manager.load();
 
-app.use(cors({ origin: 'http://localhost:3000', optionsSuccessStatus: 200 }));
+app.use(cors());
 app.use(express.json());
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
@@ -18,6 +18,7 @@ app.get('/', (_, res) => {
 
 app.post('/angeloqna', async (req, res) => {
     const response = await manager.process('en', req.body.message);
+    console.log(response);
     res.send({
         answer: response.answers[0].answer
     });

@@ -1,0 +1,21 @@
+{
+  "name": "angelo-ai",
+  "version": "0.0.1",
+  "description": "Angelo Austria's personal chatbot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "train": "node train/train.js"
+  },
+  "author": "Angelo Austria",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "node-nlp": "^4.23.4"
+  },
+  "proxy": "http://localhost:5000",
+  "engines": {
+    "node": "v16.3.0"
+  }
+}

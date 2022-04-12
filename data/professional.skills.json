@@ -1,0 +1,10 @@
+{
+    "questions": [
+        "what technologies are you familiar with?",
+        "what programming languages are you familar with?",
+        "do you know javascript?"
+    ],
+    "answers": [
+        "I have experience in web development, specifically JavaScript, React.js and Node.js."
+    ]
+}

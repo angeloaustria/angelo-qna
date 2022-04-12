@@ -1,0 +1,12 @@
+{
+    "questions": [
+        "where do you work",
+        "who do you work for",
+        "which company do you work for",
+        "what is your job"
+    ],
+    "answers": [
+        "I currently work as a software developer at Varicent.",
+        "I am a software developer at Varicent."
+    ]
+}

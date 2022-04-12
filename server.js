@@ -7,7 +7,7 @@ const port = process.env.PORT || 5000;
 const manager = new NlpManager({ languages: ['en'] });
 manager.load();
 
-app.use(cors({origin: true, credentials: true}));
+app.use(cors({ origin: 'http://localhost:3000', optionsSuccessStatus: 200 }));
 app.use(express.json());
 
 app.listen(port, () => console.log(`Listening on port ${port}`));

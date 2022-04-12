@@ -1,0 +1,11 @@
+{
+    "questions": [
+        "where did you study?",
+        "which school did you attend?",
+        "which school did you graduate from?",
+        "what program did you study?"
+    ],
+    "answers": [
+        "I graduated from the University of Toronto with a honours bachelors degree in computer science."
+    ]
+}

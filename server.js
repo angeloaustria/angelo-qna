@@ -8,6 +8,14 @@ const manager = new NlpManager({ languages: ['en'] });
 manager.load();
 
 app.use(express.json());
+const corsOptions = {
+    "origin": "*",
+    "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "preflightContinue": false,
+    "optionsSuccessStatus": 204,
+    "allowedHeaders": ["Content-Type"]
+  }
+app.use(cors(corsOptions));
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
@@ -15,8 +23,7 @@ app.get('/', (_, res) => {
     res.send('Running angelo-qna server...');
 });
 
-app.options('/angeloqna', cors());
-app.post('/angeloqna', cors(), async (req, res) => {
+app.post('/angeloqna', async (req, res) => {
     const response = await manager.process('en', req.body.message);
     res.send({
         answer: response.answers[0].answer

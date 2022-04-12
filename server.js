@@ -18,7 +18,6 @@ app.get('/', (_, res) => {
 
 app.post('/angeloqna', async (req, res) => {
     const response = await manager.process('en', req.body.message);
-    res.header("Access-Control-Allow-Origin", "*");
     res.json({
         answer: response.answers[0].answer
     });

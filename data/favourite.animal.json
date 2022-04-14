@@ -1,0 +1,14 @@
+{
+    "questions": [
+        "pet",
+        "animal",
+        "favourite pet?",
+        "favourite animal?",
+        "capybara",
+        "capybaras",
+        "do you like capybaras?"
+    ],
+    "answers": [
+        "Capybaras!!!"
+    ]
+}

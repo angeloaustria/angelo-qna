@@ -19,7 +19,7 @@ app.get('/', (_, res) => {
 app.post('/angeloqna', async (req, res) => {
     const response = await manager.process('en', req.body.message);
     res.send({
-        answer: response.answers[0].answer,
-        intent: response.intent
+        answer: response.answers[0]?.answer ?? 'Sorry, I have not been trained to answer your question.',
+        intent: response.intent ?? 'response.unknown'
     });
 });
